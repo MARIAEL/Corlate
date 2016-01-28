@@ -9,9 +9,15 @@
  */
 angular.module('corlateApp')
   .controller('BlogCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+   
+    $scope.busca=function(){
+    	if ($scope.busqueda==undefined || $scope.busqueda=='') {  
+    	  	alert ('escribe algo');
+    }
+    else {
+    	alert($scope.busqueda);
+    }
+        
+    }
+
   });
